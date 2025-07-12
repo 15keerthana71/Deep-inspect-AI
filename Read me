@@ -1,0 +1,50 @@
+Predictive Maintenance & Surface Defect Classification
+This script performs two separate tasks using deep learning:
+
+Predictive Maintenance
+
+Uses an LSTM model on tabular time-series data to predict equipment failure.
+
+Input: CSV file with sensor readings and failure labels.
+
+Steel Surface Defect Classification
+
+Uses a small Convolutional Neural Network (CNN) to classify images of steel surface defects.
+
+Input: NEU Metal Surface Defects dataset in a ZIP file.
+
+Setup and Usage
+Download the datasets:
+
+Predictive Maintenance CSV:
+https://www.kaggle.com/datasets/hiimanshuagarwal/predictive-maintenance-dataset
+
+NEU Metal Surface Defects ZIP:
+https://www.kaggle.com/datasets/fantacher/neu-metal-surface-defects-data
+
+Place the files in the data directory:
+
+data/predictive_maintenance.csv
+
+data/neu_defects.zip
+
+Run the script (updated_ml_pipeline.py) in a Python environment with TensorFlow installed.
+
+The defects zip will be automatically extracted.
+
+Training will start for both models if datasets are found.
+
+Requirements
+Python 3.x
+
+TensorFlow
+
+numpy, pandas, scikit-learn
+
+Optional: GPU for faster training
+
+Output
+Prints training metrics for predictive maintenance (accuracy, precision, recall, F1 score).
+
+Prints test accuracy for surface defect classification.
+ NOTE :- I did not add image path to code please add path to code while executing it.
